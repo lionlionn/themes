@@ -1,0 +1,685 @@
+/*
+Theme Name: Cat
+Theme URI: http://wordpress.org/
+Description: The theme Designer <a href="http://designerxartist.com/" >LIU,MING-WEI</a> ,  Programer  <a href="http://www.lionlionn.com/ihave/" >Wang,Ching-Yi</a> .
+Version: v100623
+Author: CAT
+*/
+
+
+/*********************************** 
+ basic相關START
+ 上右下左;p盒子裡面;m盒子外面
+************************************/
+body {
+    font-size: 13px;
+	font-family: "LiHei Pro", Helvetica, "新細明體", Arial;
+	letter-spacing: 1px;
+	background: url('images/bg.gif');
+    color: #666666;
+    margin: 0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+
+a {	
+    color: #666666;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+/*整個網站大框架*/
+#page {
+	/*background-color: white;*/
+	text-align: left;
+	margin: 0px auto;
+	padding:10px 0px 0px 0px;
+	width:901px;
+	border: 0px solid #959596;
+	overflow: hidden;
+}
+/*********************************** 
+ basic相關END
+************************************/
+
+/*********************************** 
+ header相關START
+************************************/
+#header {
+    border: 0px solid #FFFF00;
+	margin: 0px;
+	padding: 0px;
+	width:901px;
+}
+
+#header_tnua {
+	float:left;
+    border: 0px solid #FF33CC;
+	margin: 0 0 0 0px;
+	padding-top: 0px;
+	_padding-top: 0px;
+	*padding-top: 0px;
+	width:400px;
+	text-align: left;
+	
+}
+
+#header_search {
+	float:right;
+    border: 0px solid #FF33CC;
+	margin: 0 0 0 0px;
+	padding-top:1px;
+	width:162px;
+	height: 30px;
+}
+
+/*搜索 start*/
+.ss{ width:162px; height:21px; background:url('images/s_bg.gif') no-repeat left top; border: 0px solid #CF6;}
+/*中文*/
+.ss1{ width:115px; height:21px;margin:0px auto auto 5px; display:inline; float:left;border: 0px solid #F30;}
+.ss1 input{ width:115px; height:16px; background:Transparent; border:0px; margin-top:2px; line-height:16px; font-size:13px; color: #666666; padding:0px;}
+.ss2{ width:39px; height:21px;float:right;border: 0px solid #F30; padding-right:0px;}
+
+/*英文*/
+.ss1_2{ width:103px; height:21px;margin:0px auto auto 5px; display:inline; float:left;border: 0px solid #F30;}
+.ss1_2 input{ width:103px; height:16px; background:Transparent; border:0px; margin-top:2px; line-height:16px; font-size:13px; color: #666666; padding:0px;}
+.ss2_2{ width:51px; height:21px;float:right;border: 0px solid #F30; padding-right:0px;}
+/*搜索 end*/
+
+#header_swf {
+    border: 0px solid  #CC3366;
+	background: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	/*height: 388px;*/
+	height: 266px;
+}
+	
+#header_main_left{
+	float:left;
+    border: 0px solid #FF33CC;
+	margin: 0 0 0 0px;
+	padding: 0px;
+	width:233px;	
+}
+
+#header_main_right{
+	float:right;
+	width:668px;
+    border: 0px solid #FF33CC;
+	margin: 0 0 0 0px;
+	padding: 0px;
+}
+
+#header_main_line{
+	border: 0px solid #33CCFF;
+	margin: 0 0 0 0px;
+    padding: 0px 8px 0px 0px;
+	height: 23px;
+	background: #FFFFFF;
+	text-align: right;	
+}
+
+#header_main_line img{
+	padding : 6px 0px 0px 0px;
+}
+
+#header_line{
+	border: 0px solid  #FFCC00;
+    padding: 5px 0px 5px 0px;
+	text-align:center;
+}
+/*********************************** 
+ header相關END
+************************************/
+
+/*********************************** 
+ menu相關START
+************************************/
+#global_menu {
+	position: absolute;
+	width:680px;
+	/*height:20px;*/
+	left:50%;
+	margin-top: 360px;
+	/*數字大靠左*/
+	/*margin-left:-442px;*/
+	/*margin-left:-449px;*/
+	margin-left:-450px;  
+	padding: 0px;
+	border: 0px solid #F66;
+	height : 20px ; 
+	/*line-height : 20px;*/
+	margin-top: 288px;	
+	/*屬性前面有 _ 的, 只有在 IE 6 以前的 Broswer 會有效用*/
+	/*數字小在上面*/
+	_margin-top: 290px; /* IE6 */ 
+	*margin-top: 290px; /* IE7 */ 
+}
+
+#horizon_menu{
+	border: solid 0px #CCFF33;
+	font-size:13px;
+    width:680px;
+	margin-left:5px; 
+	display:block;
+	/*height : 20px ; line-height : 20px;*/
+	
+}
+
+#horizon_menu span{	
+	display:block;
+	/*width:7em;*/
+}
+
+#horizon_menu ol {margin:0px 0px 0px 0px;padding:0px;}
+
+#horizon_menu ol li{	
+	list-style:none;
+	float:left;
+	color:#575958;
+	text-decoration:none;
+	/*看menu item 間距時可以設1來看*/
+	border: solid 0px  #609;
+}
+
+#horizon_menu ol li a:hover{
+	color:#f55c30;
+	text-decoration:none;
+}
+
+#horizon_menu ul.collapsed,#horizon_menu ul.expand{
+	margin:0px;
+}
+
+#horizon_menu ul.collapsed{
+	/*100810 add */
+    /*border: 1px solid #000000;*/
+	/*background:#f1592a;*/
+	overflow: hidden;
+	height:0px;
+	/*width:150px;*/
+	padding-top:0px;
+	_padding-top:0px; 
+	*padding-top:0px; 
+	margin-top:0px;
+	_margin-top:-1px;
+	*margin-top:-1px;
+	position:absolute;
+	list-style:none;
+}
+
+#horizon_menu ul.expand{
+	/*100810 add*/
+    /*border: 1px solid #000000;*/
+	/*background:#f1592a;*/
+	overflow: hidden;
+	/*width:150px;*/
+	padding-top:0px;
+	_padding-top:0px; 
+	*padding-top:0px; 
+	margin-top:0px;
+	_margin-top:-1px;
+	*margin-top:-1px;
+	position:absolute;
+	list-style:none;
+}
+
+#horizon_menu ul.collapsed li{
+    /*100810 add */
+	border: 0px solid #959596;
+	background:#f1592a;
+	/*padding-left:2px;*/
+	/*width:120px;*/
+	float:left;
+    clear:both;
+	/*float:left;clear:both;*/
+    padding:2px 0px 2px 5px;
+	*padding:-10px 0px 2px 5px;
+}
+
+#horizon_menu ul.expand li{
+	/*100810 add */
+	/*padding-left:2px;*/
+    border: 0px solid #959596;
+	background:#f1592a;
+	clear:both;
+	/*width:120px;*/
+	/*float:left;clear:both;*/
+    padding:2px 0px 2px 5px;
+	*padding:-10px 0px 2px 5px;
+}
+
+#horizon_menu ul.collapsed a,
+#horizon_menu ul.collapsed a:link,
+#horizon_menu ul.collapsed a:visited,
+#horizon_menu ul.expand a,
+#horizon_menu ul.expand a:link,
+#horizon_menu ul.expand a:visited{
+	  /*font-size:14px;*/
+  	  background:#f1592a;
+	  color:#FFF;
+	  text-decoration:none;
+	  margin:0;padding:0;
+	  /* float:left;clear:both;*/
+}
+
+#horizon_menu ul.collapsed a:hover,
+#horizon_menu ul.expand a:hover{
+	color:#cccccc;
+	/*background:#f1592a;*/
+    /*background:#ff7d55;*/
+	text-decoration:none;
+	margin:0;
+	padding:0;
+}
+/*********************************** 
+ menu相關END
+************************************/
+
+/*********************************** 
+ content相關start
+************************************/
+#content {
+	border:0px solid  #339933;
+	padding:0px 4px 15px 6px;
+}
+
+#big_titleBox{
+	border: 0px solid #F60;
+	width:586px;
+}
+
+.index_box1{
+   float:left;
+   border:0px solid #36ffff;
+   padding: 5px 0px 0px 0px;
+   width: 440px; 
+}
+
+.index_box2{
+   float:right;
+   border:0px solid #36ffff;
+   padding: 5px 0px 0px 0px;
+   width: 440px; 
+  
+}
+
+.main_box1{
+   float:left;
+   border:0px solid #36ffff;
+   padding: 5px 0px 0px 0px;
+   width: 440px; 
+}
+
+.main_box2{
+	float:right;
+	border:0px solid #36ffff;
+	padding: 5px 0px 0px 0px;
+	width: 410px;
+	text-align: right;
+}
+
+.main2_box1{
+   float:left;
+   border:0px solid #36ffff;
+   padding: 5px 0px 0px 0px;
+   width: 600px; 
+}
+
+.main2_box2{
+	float:right;
+	border:0px solid #36ffff;
+	padding: 5px 0px 0px 0px;
+	width: 270px;
+	text-align: right;
+}
+
+/* index start */
+.index_more{
+   color:#ff9966;
+}
+
+/*
+首頁list─日期(左)+文字(右)組合lis
+注意index_dateL + index_dateR=430px */
+.index_dateL{
+    width: 48px; 
+}
+.index_dateR{
+	white-space: nowrap;  
+    width: 382px;                  /* IE6 需要定义宽度 */ 
+    overflow: hidden; 
+	
+	-o-text-overflow: ellipsis;    /* Opera */ 
+	text-overflow: ellipsis;
+ 	-moz-binding: url('ellipsis.xml#ellipsis');
+  	border: 0px solid #3F3;
+}
+
+/*
+首頁list─圖片(左)+文字(右)組合list
+圖片width="90"
+注意index_picL + index_picR=430px */
+.index_picL{
+	width:98px;		
+}
+.index_picR{
+	white-space: nowrap;  
+    width: 332px;                  /* IE6 需要定义宽度 */ 
+    overflow: hidden; 
+	
+	-o-text-overflow: ellipsis;    /* Opera */ 
+	text-overflow: ellipsis;
+ 	-moz-binding: url('ellipsis.xml#ellipsis');
+  	border: 0px solid #3F3;
+}
+/* index end */
+
+/* post start */
+.archive_path{
+  font-size: 11px;
+  padding: 0px 0px 15px 0px;
+}
+
+.archive_title{
+   color: #EB5C2B;
+   font-size: 18px;
+   font-weight: bold;
+   letter-spacing: 3px;
+}
+
+#archive_title{
+   border:0px solid #0FC;
+   float:left;
+   color: #EB5C2B;
+   font-size: 18px;
+   font-weight: bold;
+   letter-spacing: 3px;
+   line-height:22px;
+   width:220px;
+   overflow: hidden; /* 超過範圍隱藏 */
+   white-space: nowrap; /* 不斷行 */
+}
+
+#archive_year{
+   border:0px solid  #F6F;
+   float:right;
+    line-height:22px;
+}
+
+.cat_rectangle{
+	padding-top:0px;
+}
+
+.list_title2{
+	color: #EB5C2B;
+	font-size: 15px;
+}
+
+
+/*
+分類list─日期(左)+文字(右)組合list
+注意archive_dateL + archive_dateR=586px */
+.archive_dateL{
+	width:85px;		
+}
+.archive_dateR{
+	white-space: nowrap;  
+    width: 501px;                  /* IE6 需要定义宽度 */ 
+    overflow: hidden; 
+	
+	-o-text-overflow: ellipsis;    /* Opera */ 
+	text-overflow: ellipsis;
+ 	-moz-binding: url('ellipsis.xml#ellipsis');
+  	border: 0px solid #3F3;
+		
+}
+
+/*
+分類list─圖片(左)+文字(右)組合list
+圖片width="135"
+注意archive_picL + archive_picR=586px */
+.archive_picL{
+	width:143px;		
+}
+.archive_picR{
+	white-space: nowrap;  
+    width: 443px;                  /* IE6 需要定义宽度 */ 
+    overflow: hidden; 
+	
+	-o-text-overflow: ellipsis;    /* Opera */ 
+	text-overflow: ellipsis;
+ 	-moz-binding: url('ellipsis.xml#ellipsis');
+  	border: 0px solid #3F3;
+
+}
+
+.archive_excerpt{
+	word-break: normal;
+    white-space:normal;
+	word-break:break-all;
+	overflow:hidden;
+	-moz-binding: url('wordwrap.xml#wordwrap'); /* 再多这行 */
+}
+
+/*
+post單篇文章─日期(左)+文字(右)組合list
+注意single_dateL + single_dateR=586px 
+注意調single_dateL後single_con也要同時改single_con的padding-left
+*/
+.single_dateL{
+	width:85px;			
+}
+.single_dateR{
+	width:501px;	
+	word-break: normal;
+    white-space:normal;
+	word-break:break-all;
+	overflow:hidden;
+    -moz-binding: url('wordwrap.xml#wordwrap'); /* 再多这行 */
+}
+
+.single_title {
+	color: #EB5C2B;
+}
+
+.single_con {	
+    /* 防止撐開 */
+    /*table-layout: fixed;*/
+    /* 英文單字自動換行 */
+    /* word-wrap: break-word;*/
+    /* 正常避頭尾 */
+    word-break: normal;
+    /* 文字左右對齊 */
+    text-align:justify;
+    /*text-justify:inter-ideograph;*/
+	/*text-align-last: justify;*/
+	text-align-last: left;
+	
+	white-space:normal;
+	word-break:break-all;
+	overflow:hidden;
+	-moz-binding: url('wordwrap.xml#wordwrap'); /* 再多这行 */
+	/*single_dateL的寬改這值也要改*/	
+	padding-left:85px;
+	line-height: 18px;
+}
+
+.single_con p {      
+    line-height: 18px;
+}
+
+/* post end */
+
+/* page start */
+#page_title{
+   border:0px solid #0FC;
+   color: #EB5C2B;
+   font-size: 18px;
+   font-weight: bold;
+   letter-spacing: 3px;
+   line-height:22px;
+   overflow: hidden; /* 超過範圍隱藏 */
+   white-space: nowrap; /* 不斷行 */
+}
+
+.page_path{
+  font-size: 11px;
+  padding: 0px 0px 10px 0px;
+}
+
+.page_item{
+  padding: 0px 0px 20px 0px;
+}
+
+.page_con {	
+ 	padding: 15px 6px 0px 0px;
+    /* 防止撐開 */
+    table-layout: fixed;
+    /* 英文單字自動換行 */
+    /* word-wrap: break-word;*/
+    /* 正常避頭尾 */
+    word-break: normal;
+    /* 文字左右對齊 */
+    text-align:justify;
+    /*text-justify:inter-ideograph;*/
+	/*text-align-last: justify;*/
+	text-align-last: left;
+	line-height: 18px;
+}
+
+.page_con p {      
+    line-height: 18px;
+}
+/* page end */
+
+/* search start */
+#search_title{
+   border:0px solid #0FC;
+   color: #EB5C2B;
+   font-size: 18px;
+   font-weight: bold;
+   letter-spacing: 3px;
+   line-height:22px;
+   overflow: hidden; /* 超過範圍隱藏 */
+   white-space: nowrap; /* 不斷行 */
+}
+
+.search_date{
+	color: #EB5C2B;
+}
+
+.search_cat{
+	color: #EB5C2B;
+	padding: 0px 0px 5px 0px;
+}
+
+.search{ 
+	font-size:11px;
+	color: #888888;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/*
+搜尋list─日期(左)+文字(右)組合list
+注意search_dateL + search_dateR=586px */
+.search_dateL{
+	width:85px;		
+}
+.search_dateR{
+	white-space: nowrap;  
+    width: 501px;                  /* IE6 需要定义宽度 */ 
+    overflow: hidden; 
+	
+	-o-text-overflow: ellipsis;    /* Opera */ 
+	text-overflow: ellipsis;
+ 	-moz-binding: url('ellipsis.xml#ellipsis');
+  	border: 0px solid #3F3;
+}
+/* search end */
+
+/*********************************** 
+ contact相關END
+************************************/
+
+/*********************************** 
+ footer相關START
+************************************/
+#footer {
+	border:0px solid  #FFFF33;
+    background:url(images/footer_line.gif) no-repeat top center;
+	padding:5px 5px 15px 0px;
+	font-size:11px;
+	text-align: right;
+}
+
+.copyright {
+    /*要這字型才能顯示copy c的圖型*/
+    font-family: Arial, Helvetica, sans-serif
+}
+/*********************************** 
+ footer相關END
+************************************/
+
+/*********************************** 
+ 其它START
+************************************/
+/* year start */
+.year {
+	/*font-size: 9px;*/
+}
+
+.year A {
+	/*font-size: 9px;*/
+}
+
+.year A:hover {
+	/*font-size: 9px;*/COLOR: #EB5C2B; TEXT-DECORATION: underline;
+}
+/* year end */
+
+/* usually used start */
+a img {
+	border: none;
+}
+
+/* clear start */
+.clear {
+	clear: both;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+
+.clearfix {display: block;}
+/* End hide from IE-mac */ 
+/* clear end */
+
+/*
+p {
+	margin:0px;
+	padding:0px
+}
+*/
+
+*{ 
+	padding:0; 
+	margin:0; 
+}
+/* usually used end */
+/*********************************** 
+ 其它START
+************************************/
